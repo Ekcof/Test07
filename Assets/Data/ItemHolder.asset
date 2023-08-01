@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7febb42700491eb40a8c7218eaef2df5, type: 3}
+  m_Name: ItemHolder
+  m_EditorClassIdentifier: 
+  _sameItemLimit: 3
+  _helmets:
+  - _id: helmet01
+    _name: Scout helmet
+    _attack: 1
+    _defense: 1
+    _hp: 0
+  - _id: helmet02
+    _name: Hawk helmet
+    _attack: 0
+    _defense: 1
+    _hp: 1
+  - _id: helmet03
+    _name: Dark Helmet
+    _attack: 0
+    _defense: 2
+    _hp: 0
+  _weapons:
+  - _id: weapon01
+    _name: Wooden Club
+    _attack: 2
+    _defense: 1
+    _hp: 0
+  - _id: weapon02
+    _name: Iron Sword
+    _attack: 1
+    _defense: 1
+    _hp: 1
+  - _id: weapon03
+    _name: Iron Axe
+    _attack: 2
+    _defense: 0
+    _hp: 1
+  _shields:
+  - _id: shield01
+    _name: Wooden shield
+    _attack: 1
+    _defense: 1
+    _hp: 1
+  - _id: shield02
+    _name: Round Shield
+    _attack: 1
+    _defense: 2
+    _hp: 0
+  - _id: shield03
+    _name: Iron Shield
+    _attack: 0
+    _defense: 2
+    _hp: 1
