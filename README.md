@@ -5,6 +5,7 @@
 Telegram: [@veselio](https://t.me/veselio)
 
 This game is similar to [Bonehead game](https://play.google.com/store/apps/details?id=com.xxgtr.az&hl=en_US). I have tried to create a similar mechanics for game where you have to dig and get a random items for your character in order to improve his parameters.
+</br>
 ![image_url](https://github.com/Ekcof/Test07/blob/main/1.png)
 ![image_url](https://github.com/Ekcof/Test07/blob/main/2.png)
 ![image_url](https://github.com/Ekcof/Test07/blob/main/3.png)
