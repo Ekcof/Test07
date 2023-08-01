@@ -47,7 +47,7 @@ public class ItemInfoView : WindowBase
 
     private void OnItemTaken(OnItemTaken data)
     {
-        Hide(0);
+        if (!_isHidden)
+            Hide(0);
     }
-
 }

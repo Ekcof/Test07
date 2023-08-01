@@ -7,20 +7,23 @@ using UnityEngine.UI;
 public class WindowBase : MonoBehaviour
 {
     [SerializeField] private protected Button _blockPanel;
-    private bool _isHidden = true;
-    // Start is called before the first frame update
+    private protected bool _isHidden = true;
 
     private protected virtual void Awake()
     {
         if (_blockPanel != null)
         {
             _blockPanel.onClick.RemoveAllListeners();
-            _blockPanel.onClick.AddListener(() => Hide(0));
         }
     }
 
     private protected virtual void Show()
     {
+        if (_blockPanel != null)
+        {
+            _blockPanel.onClick.RemoveAllListeners();
+            _blockPanel.onClick.AddListener(() => Hide(0));
+        }
         DOTween.Kill(transform);
         transform.DOScale(1, 0.3f);
         if (_blockPanel != null)
@@ -30,24 +33,21 @@ public class WindowBase : MonoBehaviour
 
     private protected virtual void Hide(float hideTime = 0.3f)
     {
+        if (_isHidden)
+            return;
         if (_blockPanel != null)
         {
             _blockPanel.gameObject.SetActive(false);
-            _blockPanel.onClick.RemoveAllListeners();
         }
         DOTween.Kill(transform);
-        transform.DOScale(0, hideTime).OnComplete(() =>
-        {
-            Debug.Log("What hapnn");
-            if (_blockPanel != null)
-                _blockPanel.onClick.AddListener(() => Hide(0));
-            _isHidden = true;
-        });
+        transform.DOScale(0, hideTime);
+        _isHidden = true;
     }
 
     private protected virtual void OnDestroy()
     {
         if (_blockPanel != null)
             _blockPanel.onClick.RemoveAllListeners();
+        DOTween.Kill(transform);
     }
 }
