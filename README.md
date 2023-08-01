@@ -5,7 +5,9 @@
 Telegram: [@veselio](https://t.me/veselio)
 
 This game is similar to [Bonehead game](https://play.google.com/store/apps/details?id=com.xxgtr.az&hl=en_US). I have tried to create a similar mechanics for game where you have to dig and get a random items for your character in order to improve his parameters.
-<img src="[link_to_your_image.jpg](https://github.com/Ekcof/Test07/blob/main/1.png)" alt="Image description" width="170" height="200">
+[image_url](https://github.com/Ekcof/Test07/blob/main/1.png)
+[image_url](https://github.com/Ekcof/Test07/blob/main/2.png)
+[image_url](https://github.com/Ekcof/Test07/blob/main/3.png)
 # Controls
 Tap on the character to get a new item. There are 3 types of them - helmets, weapons and shields. Every item improves mostly one parameter - HP, attack and defense respectively.
 
